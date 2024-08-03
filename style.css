@@ -29,9 +29,7 @@ a {
 .about-section p {
   font-size: 20px;
   font-weight: medium !important;
-  line-height: 150%;
-  width: 624px;
-  word-spacing: 0;
+ 
 }
 
 
@@ -40,7 +38,7 @@ a {
   justify-content: center;
 }
 
-.about-hr {
+hr {
   border: 1px solid #e6e6e5;
   margin-left: 81px;
   margin-right: 81px;
@@ -161,5 +159,8 @@ footer {
   }
   .nav-links {
     padding-right: 81px;
+  }
+  .about-section p {
+    width: 600px;
   }
 }
