@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-a {
+ .links-menu{
   text-decoration: none;
   font-size: 18px;
   font-weight: medium !important;
@@ -27,9 +27,15 @@ a {
 }
 
 .about-section p {
-  font-size: 20px;
+  line-height: 1.5rem;
   font-weight: medium !important;
  
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  color: black;
 }
 
 
@@ -60,13 +66,21 @@ html {
 
 h1 {
   margin: 0;
-  font-size: 64px;
+  font-size: 35px;
   font-weight: bold !important;
+  color: #828282;
 }
 
-h2, h3, h4, h5, h6, p {
+h2, h4, h5, h6, p {
   margin: 0;
 }
+
+.footer-list {
+  list-style: none;
+  text-align: start;
+  line-height: 1.5rem;
+}
+
 
 .main {
   padding: 1rem;
@@ -90,11 +104,9 @@ h2, h3, h4, h5, h6, p {
 }
 
 footer {
-  text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 80px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .projects {
@@ -105,6 +117,7 @@ footer {
 
 .project-card {
   height: 250px;
+  margin-bottom: 1rem;
 }
 
 .project-image {
@@ -124,8 +137,83 @@ footer {
   height: 100%;
   border-radius: 10px;
 }
+.projects-section p {
+  font-weight: 24px;
+  line-height: 1.5rem;
+  padding-top: 10px;
+}
+
+.projects-section {
+  margin-top: 40px;
+}
+
+
+
+/* Projects */
+
+.project-description p {
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+
+.project-image-page, .project-image-description {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  
+}
+
+.project-title-section h2 {
+  font-size: 18px;
+  font-weight: bold !important;
+ 
+}
+.project-title-section p {
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+
+.back-button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: black;
+  color: white;
+}
+
+ .article-container-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+
+  .project-video {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+  }
+
 
 @media screen and (min-width: 768px) {
+
+  h1 {
+    font-size: 45px;
+  }
+
   .main {
     padding-left: 150px;
     padding-right: 150px;
@@ -146,10 +234,11 @@ footer {
   } 
   .about-image {
     width: 408px;
-    height: 557px;
+    height: 480px;
+    margin-top: 20px;
   }
   .nav p {
-    padding-left: 150px;
+    padding-left: 134px;
   }
   .nav-links {
     padding-right: 150px;
@@ -158,30 +247,58 @@ footer {
     width: 600px;
   }
   footer {
-    text-align: start;
     padding-left: 150px;
-  }
-
-  .article-container-projects {
+    padding-right: 150px;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
- .projects {
-  margin: 20px auto;
-  display:grid;
-  grid-template-columns: 400px 400px;
-  grid-row: 500px 500px;
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  .footer-info {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
+ 
+ .projects {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
   .projects-section {
     width: 400px;
-    margin-top: 40px;
   }
-  .projects-section p {
-    font-weight: 24px;
-    color: #828282;
+  .project-card {
+    width: 400px;
+  }
+
+  /* projects page */
+
+  .project-title-section {
+    width: 500px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .project-description {
+    padding: 1.875rem 12.5rem 1.875rem 12.5rem;
+  }
+  .project-image-description {
+    width: 50%;
+    height: 300px;
+  }
+  .project-images-section-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .project-video {
+    height: 700px;
+    margin-top: 0;
   }
 }
