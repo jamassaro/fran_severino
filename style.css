@@ -136,6 +136,7 @@ footer {
 }
 
 .project-info p {
+  margin-top: 5px;
   color: #828282;
 }
 
@@ -276,10 +277,10 @@ footer {
     flex-wrap: wrap;
   }
   .projects-section {
-    width: 400px;
+    width: 700px;
   }
   .project-card {
-    width: 273px;
+    width: 274px;
   }
 
   .name-logo {
