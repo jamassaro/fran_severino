@@ -279,7 +279,11 @@ footer {
     width: 400px;
   }
   .project-card {
-    width: 260px;
+    width: 273px;
+  }
+
+  .name-logo {
+    color: white;
   }
 
   /* projects page */
